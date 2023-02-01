@@ -3,11 +3,14 @@ import { useState } from "react"
 export const Contador=()=>{
 
     const  [valor,setvalor]= useState(0)
+    var operandoa;
+    var operandob;
+    var operacion;
 
     var sumar=()=>{var pantalla2 = document.getElementById("pantalla2").value = pantalla2 = document.getElementById("pantalla").value
      {borrar}
     
-    operacion ="+";}
+     operacion ="+";}
     
     
     var restar=()=>{setvalor(valor-1)}

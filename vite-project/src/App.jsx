@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
-import Contador from './assets/contador'
+
 
 function App() {
  
-const Nuevo=() =>{
-
+function Pantalla(props){
+    
   return (
     <>
-        <p>nuevo componente</p>
+        <input type="number" name="pantalla" id="pantalla" />
+        <input type="number" name="pantalla" id="pantalla2" /> <br />
     </>
     
   )
 }
-const Alert=()=>{alert("You pressed a key inside the input field");}
+const Boton=()=>{boton(num);}
 
-const Otro=()=>{
-  return ( <button onClick={()=>(Alert())}>otro componente</button> )
+function Botones(props){
+  return ( <button type="button" class="btn btn-primary" onClick={Boton}>{props.num}</button> )
 }
 
-var c = "variable con var"
-var b ="esto es una prueba"
+
 
 
   return (
     <>
-        
-        <Contador/>
+        <Pantalla/>
+        <Botones num="1"/>
+        <Botones num="2"/>
+        <Botones num="3"/>
+        <Botones num="4"/>
+        <Botones num="5"/>
+        <Botones num="6"/>
+        <Botones num="7"/>
+        <Botones num="8"/>
+        <Botones num="9"/>
+        <Botones num="0"/>
+        <Botones num="="/>
       
+    
     </>
     
   )
